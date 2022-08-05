@@ -8,4 +8,8 @@ contract Counter {
         count = 0;
     }
     
+     function getCount() public view returns(uint) {
+        return count;
+    }
+    
     }
