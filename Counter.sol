@@ -12,4 +12,8 @@ contract Counter {
         return count;
     }
     
+     function incrementCount() public {
+        count++;
+    }
+    
     }
