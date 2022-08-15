@@ -11,7 +11,7 @@ contract LedgerBalance {
 contract Updater {
    function updateBalance() public returns (uint) {
       LedgerBalance ledgerBalance = new LedgerBalance();
-      ledgerBalance.updateBalance(10);
+      ledgerBalance.updateBalance(100);
       return ledgerBalance.balances(address(this));
    }
 }
