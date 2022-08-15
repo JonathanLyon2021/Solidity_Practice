@@ -11,3 +11,21 @@ contract Owner {
       }
    }
 }
+
+pragma solidity ^0.5.0;
+
+contract Owner {
+   address owner;
+   constructor() public {
+      owner = msg.sender;
+   }
+   modifier onlyOwner {
+      require(msg.sender == owner);
+      _;
+   }
+   modifier costs(uint price) {
+      if (msg.value >= price) {
+         _;
+      }
+   }
+}
