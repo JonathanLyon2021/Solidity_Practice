@@ -4,6 +4,16 @@ pragma solidity ^0.8.7;
 
 contract CryptoKids {
         //owner Dad
+    address owner;
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+       // uint amountOfMoney
+       // bool isTotal
+       // string 'hello'
+       // address walletAddress
 
         //define Kid
 
