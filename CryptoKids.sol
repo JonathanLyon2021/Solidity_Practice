@@ -18,7 +18,19 @@ contract CryptoKids {
         uint amount;
         bool canWithdraw;
     }
+    
+      Kid[] public kids;
 
+        function addKid(address walletAddress, string memory  firstName, string memory lastName, uint releaseTime, uint amount, bool canWithdraw) public {
+            kids.push(Kid(
+                walletAddress,
+                firstName,
+                lastName,
+                releaseTime,
+                amount,
+                canWithdraw
+            ));
+            
         //define Kid
 
         //add kid to the contract, specifically to a kids account
