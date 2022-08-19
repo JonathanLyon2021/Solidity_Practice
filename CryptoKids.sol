@@ -9,11 +9,15 @@ contract CryptoKids {
     constructor() {
         owner = msg.sender;
     }
-
-       // uint amountOfMoney
-       // bool isTotal
-       // string 'hello'
-       // address walletAddress
+    
+    struct Kid {
+        address walletAddress;
+        string firstName;
+        string lastName;
+        uint releaseTime;
+        uint amount;
+        bool canWithdraw;
+    }
 
         //define Kid
 
