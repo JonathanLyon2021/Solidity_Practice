@@ -10,6 +10,15 @@ contract CryptoKids {
         owner = msg.sender;
     }
     
+     struct Kid {
+        address walletAddress;
+        string firstName;
+        string lastName;
+        uint releaseTime;
+        uint amount;
+        bool canWithdraw;
+    }
+    
       Kid[] public kids;
 
         function addKid(address walletAddress, string memory  firstName, string memory lastName, uint releaseTime, uint amount, bool canWithdraw) public {
