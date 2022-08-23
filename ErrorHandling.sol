@@ -11,7 +11,7 @@ _;
 }
 function selling(uint amount) public payable onlySeller {
 if (amount > msg.value / 2 ether)
-revert("Not enough Ether provided.");
+revert("Not enough Ether provided to fun function.");
 // Perform the sell operation.
 }
 }
